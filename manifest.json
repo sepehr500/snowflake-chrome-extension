@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Snowflake",
+  "short_name": "snowflake",
+  "version": "1.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "./dist/index.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

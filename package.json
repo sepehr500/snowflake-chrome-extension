@@ -1,0 +1,15 @@
+{
+  "name": "snowflake",
+  "version": "1.0.0",
+  "description": "An extension to make the web less toxic",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alex": "^8.1.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
