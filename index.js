@@ -37,9 +37,8 @@ function findAndReplace() {
           alex.text(child.nodeValue).messages.forEach(mes => {
             if (mes.expected && mes.expected.length) {
               let value = child.nodeValue;
-              console.log(mes.actual, "->", mes.expected[0]);
               value = value.replace(
-                new RegExp(mes.actual, "g"),
+                new RegExp(`\\b${mes.actual}\\b`, "g"),
                 mes.expected[0]
               );
               startingIndex = value.indexOf(mes.expected[0], startingIndex + 1);
